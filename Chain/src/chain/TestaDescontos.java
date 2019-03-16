@@ -5,9 +5,10 @@ public class TestaDescontos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here        
+            
         CalculadorDeDescontos calculador = new CalculadorDeDescontos();
-        Orcamento orcamento = new Orcamento(400.0);
+        Orcamento orcamento = new Orcamento(600.0);
+        //Adiciona itens semelhante a um carrinho de compras
         orcamento.adicionaItem(new Item("CANETA",250.0));
         orcamento.adicionaItem(new Item("LAPIS",250.0));
         orcamento.adicionaItem(new Item("papel",250.0));
