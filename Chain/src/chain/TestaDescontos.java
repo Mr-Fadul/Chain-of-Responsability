@@ -8,7 +8,7 @@ public class TestaDescontos {
             
         CalculadorDeDescontos calculador = new CalculadorDeDescontos();
         Orcamento orcamento = new Orcamento(600.0);
-        //Adiciona itens semelhante a um carrinho de compras
+        //Adiciona itens, instancia um novo item e depois o envia a classe orçamento onde se junta a lista 
         orcamento.adicionaItem(new Item("CANETA",250.0));
         orcamento.adicionaItem(new Item("LAPIS",250.0));
         orcamento.adicionaItem(new Item("papel",250.0));

@@ -3,9 +3,7 @@ package chain;
 public class DescontoPorMaisDeQuinhentosReais implements Desconto {
     private Desconto proximo;
 
-    public void setProximo(Desconto proximo) {
-      this.proximo = proximo;
-    }
+   
 
     public double desconta(Orcamento orcamento) {
       if(orcamento.getValor() > 500) {
@@ -15,4 +13,7 @@ public class DescontoPorMaisDeQuinhentosReais implements Desconto {
         return proximo.desconta(orcamento);
       }
     }
-}
+    public void setProximo(Desconto proximo) {
+      this.proximo = proximo;
+    }
+}//fim classe
